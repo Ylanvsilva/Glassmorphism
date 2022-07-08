@@ -23,7 +23,7 @@ body {
 #img-left-bottom {
     position: absolute;
     left: 20px;
-    bottom: 65px;
+    bottom: 15px;
     width: 284px;
     height: 284px;
 }
@@ -94,7 +94,15 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.7);
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(45px);
-    /*! Video 27:41 */
+    padding-left: 30px;
+}
+
+.info_submit input::placeholder {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #CDbfd8;
 }
 
 .info_submit button {
@@ -111,5 +119,28 @@ body {
     border: none;
     position: absolute;
     top: 12px;
-    right: 0;
+    right: -20px;
+}
+
+.info_card .card {
+    width: 500px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(45px);
+    border-radius: 20px;
+    position: relative;
+}
+
+.info_card .card::before {
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px;
+    /*! Video 33:58 */
 }
