@@ -129,6 +129,8 @@ body {
     backdrop-filter: blur(45px);
     border-radius: 20px;
     position: relative;
+    box-sizing: border-box;
+    padding: 40px 50px;
 }
 
 .info_card .card::before {
@@ -142,5 +144,80 @@ body {
     width: 50%;
     box-sizing: border-box;
     border-radius: 20px 0 0 20px;
-    /*! Video 33:58 */
+}
+
+.info_card .card::after {
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 0 20px 20px 0;
+}
+
+.card_title h2 {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-style: 20px;
+    line-height: 30px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 46px;
+}
+
+.card_chip {
+    margin-bottom: 45px;
+}
+
+.card_chip img {
+    width: 60px;
+    height: 43px;
+}
+
+.card_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_footer div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_footer .card_footer-info p {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+}
+
+.card_footer .card_footer-info p {
+    margin: 0;
+}
+
+.card_footer .card_footer-info p:first-child{
+    margin-bottom: 8px;
+}
+
+.footer-text {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-text-big {
+    letter-spacing: 0.07em;
+    font-size: 20px;
+    line-height: 30px;
 }
